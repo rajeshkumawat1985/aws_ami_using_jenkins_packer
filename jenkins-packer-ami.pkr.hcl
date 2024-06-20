@@ -49,7 +49,6 @@ source "amazon-ebs" "example" {
   }
   ami_name                = var.ami_name
   instance_type           = var.instance-type
-  ssh_username            = var.ssh-username
   ami_description         = var.description
   subnet_id               = var.subnet-id
   security_group_id       = var.security-group-id
