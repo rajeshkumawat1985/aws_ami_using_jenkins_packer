@@ -9,6 +9,8 @@ cd "$(dirname "$0")"
 echo "REGION=${REGION}"
 echo "AMI_NAME=${AMI_NAME}"
 echo "DESCRIPTION=${DESCRIPTION}"
+echo "DESCRIPTION=${WORKSPACE}"
+echo "DESCRIPTION=${JOB_NAME}"
 
 # Set environment variables
 CONTAINER_NAME="vijay-$(echo "${JOB_NAME}" | tr '/ ' '._').${BRANCH_NAME}"
