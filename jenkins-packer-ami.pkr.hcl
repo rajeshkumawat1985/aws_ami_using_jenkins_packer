@@ -49,7 +49,7 @@ variable "key_pair_name" {
 
 variable "ssh_private_key_file" {
   type    = string
-  default = "/home/ec2-user/private/us-west-2-keypair.pem"
+  default = "/home/ec2-user/us-west-2-keypair.pem"
 }
 
 source "amazon-ebs" "example" {
