@@ -26,6 +26,8 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 
+sudo yum install git -y
+
 - access jenkins
 http://ip:8080
 
@@ -35,5 +37,9 @@ http://ip:8080
 ## Packer Configurations
 
 - create a new free-style job in jenkins
-- 
+
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/34cdf0d8-e7fe-442d-a889-2ef7911ccc67)
+
+
+
 
