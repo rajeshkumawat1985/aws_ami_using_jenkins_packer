@@ -12,7 +12,7 @@ variable "region" {
   default = ""
 }
 
-variable "ami-name" {
+variable "ami_name" {
   type    = string
   default = ""
 }
@@ -52,7 +52,7 @@ source "amazon-ebs" "example" {
     owners      = ["amazon"]
     most_recent = true
   }
-  ami_name        = var.ami-name
+  ami_name        = var.ami_name
   instance_type   = var.instance-type
   ssh_username    = var.ssh-username
   ami_description = var.description
