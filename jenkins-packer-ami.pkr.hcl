@@ -47,6 +47,11 @@ variable "key_pair_name" {
   default = "us-west-2-keypair"
 }
 
+variable "ssh_private_key_file" {
+  type    = string
+  default = "/home/ec2-user/private/us-west-2-keypair.pem"
+}
+
 source "amazon-ebs" "example" {
   region     = var.region
   source_ami_filter {
@@ -65,6 +70,7 @@ source "amazon-ebs" "example" {
   security_group_id       = var.security-group-id
   associate_public_ip_address = true
   ssh_keypair_name     = var.key_pair_name
+  ssh_private_key_file = var.ssh_private_key_file
 
   launch_block_device_mappings {
     device_name           = "/dev/xvda"
