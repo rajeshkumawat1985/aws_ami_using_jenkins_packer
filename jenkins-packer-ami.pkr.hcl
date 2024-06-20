@@ -34,12 +34,17 @@ variable "description" {
 
 variable "subnet-id" {
   type    = string
-  default = "subnet-23fccb6b"
+  default = "subnet-0c313b384a373da09"
 }
 
 variable "security-group-id" {
   type    = string
-  default = "sg-0e5d8ca32bca5d2b7"
+  default = "sg-0d6effc88f3087358"
+}
+
+variable "key_pair_name" {
+  type    = string
+  default = "us-west-2-keypair"
 }
 
 source "amazon-ebs" "example" {
@@ -52,12 +57,14 @@ source "amazon-ebs" "example" {
     owners      = ["amazon"]
     most_recent = true
   }
-  ami_name        = var.ami_name
-  instance_type   = var.instance-type
-  ssh_username    = var.ssh-username
-  ami_description = var.description
-  subnet_id       = var.subnet-id
-  security_group_id = var.security-group-id
+  ami_name                = var.ami_name
+  instance_type           = var.instance-type
+  ssh_username            = var.ssh-username
+  ami_description         = var.description
+  subnet_id               = var.subnet-id
+  security_group_id       = var.security-group-id
+  associate_public_ip_address = true
+  key_pair_name           = var.key_pair_name
 
   launch_block_device_mappings {
     device_name           = "/dev/xvda"
