@@ -64,7 +64,7 @@ source "amazon-ebs" "example" {
   subnet_id               = var.subnet-id
   security_group_id       = var.security-group-id
   associate_public_ip_address = true
-  key_pair_name           = var.key_pair_name
+  ssh_keypair_name     = var.key_pair_name
 
   launch_block_device_mappings {
     device_name           = "/dev/xvda"
