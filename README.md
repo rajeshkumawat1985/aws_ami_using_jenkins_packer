@@ -98,6 +98,11 @@ http://ip:8080
 
 ![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/c889bc2c-bf53-4011-ab76-a91c99ec1a41)
 
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/fe28f375-6721-4889-98d1-ded6450f50cd)
+
+
+
+
 
 
 
