@@ -67,7 +67,7 @@ http://ip:8080
 - REMOVE UNWANTED PLUGINS IF YOUR JENKINS IS SLOW IN LOADING 
 ```
 
-## Packer Configurations
+## Jenkins Configurations
 
 - create a new pipeline job in jenkins
 
@@ -75,7 +75,22 @@ http://ip:8080
 
 ![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/c507ef8e-124f-4fae-be9e-e8df8bada9fa)
 
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/bf5ba311-54e4-4379-86d3-aa66f7d6b24e)
 
+```
+- change all configs required in jenkins-packer-ami.pkr.hcl
+- subnet-id
+- security-group-id
+- ssh-username
+- instance-type
+
+- below values should be declared in jenkins paramters
+- region
+- ami_name
+- description
+```
+
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/5822cef9-b952-49f7-ad20-41ee8ff6f8be)
 
 
 
