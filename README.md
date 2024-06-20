@@ -28,6 +28,9 @@ sudo systemctl status jenkins
 
 sudo yum install git -y
 
+- provide iam role(to launch ec2 instances) to jenkins
+- iam providing  admin access policy to iam role and attaching that role to jenkins
+
 - access jenkins
 http://ip:8080
 
@@ -39,6 +42,9 @@ http://ip:8080
 - create a new free-style job in jenkins
 
 ![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/34cdf0d8-e7fe-442d-a889-2ef7911ccc67)
+
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/ba04c7f3-81e3-47b4-b8d8-cba803e6194e)
+
 
 
 
