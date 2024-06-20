@@ -22,11 +22,6 @@ variable "instance-type" {
   default = "t2.micro"
 }
 
-variable "ssh-username" {
-  type    = string
-  default = "ec2-user"
-}
-
 variable "description" {
   type    = string
   default = ""
