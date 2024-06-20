@@ -19,7 +19,7 @@ CONTAINER_NAME="${CONTAINER_NAME}-${BUILD_ID}"
 docker-compose -f execute.yml run \
       --rm -w "${WORKSPACE}" \
       --name "${CONTAINER_NAME}" \
-      packer init ../jenkins-packer-ami.pkr.hcl
+      packer init "${WORKSPACE}"/jenkins-packer-ami.pkr.hcl
 
 # Run the Packer build
 docker-compose -f execute.yml run \
@@ -27,4 +27,4 @@ docker-compose -f execute.yml run \
       --name "${CONTAINER_NAME}" \
       packer build -var "region=${REGION}" \
       -var "ami_name=${AMI_NAME}" \
-      -var "description=${DESCRIPTION}" ../jenkins-packer-ami.pkr.hcl
+      -var "description=${DESCRIPTION}" "${WORKSPACE}"/jenkins-packer-ami.pkr.hcl
