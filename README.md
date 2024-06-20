@@ -92,6 +92,16 @@ http://ip:8080
 
 ![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/5822cef9-b952-49f7-ad20-41ee8ff6f8be)
 
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/baf60e26-983a-4147-97dc-9bdc80d78312)
+
+- launch one ec2-instnace using that ami and check the configs
+
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/c889bc2c-bf53-4011-ab76-a91c99ec1a41)
+
+
+
+
+
 
 
 
