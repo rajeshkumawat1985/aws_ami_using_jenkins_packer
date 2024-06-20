@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+   slave:
+     user: "${USERID}:${GROUPID}"
+     image: hashicorp/packer:latest
+     volumes:
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
+      - "${JENKINS_HOME}:${JENKINS_HOME}:rw"
+      - "${WORKSPACE}:${WORKSPACE}:rw"
+     working_dir: "${WORKSPACE}"
+     environment:
+      - PACKER_PLUGIN_PATH=${WORKSPACE}/.packer.d/plugins
+      - REGION=${REGION}
+      - AMI_NAME=${AMI_NAME}
+      - DESCRIPTION=${DESCRIPTION}
