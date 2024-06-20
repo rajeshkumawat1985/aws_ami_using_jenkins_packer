@@ -12,13 +12,13 @@ CONTAINER_NAME="vijay-$(echo ${JOB_NAME} | tr '/ ' '._').${BRANCH_NAME}"
 CONTAINER_NAME="${CONTAINER_NAME}-${BUILD_ID}"
 
 #Initialize Packer to install required plugins
-docker-compose -f build.yml run \
+docker-compose -f execute.yml run \
       --rm -w "$WORKSPACE" \
       --name "${CONTAINER_NAME}" \
       packer init jenkins-packer-ami.pkr.hcl
 
 #Run the Packer build
-docker-compose -f build.yml run \
+docker-compose -f execute.yml run \
       --rm -w "$WORKSPACE" \
       --name "${CONTAINER_NAME}" \
       packer build -var "region=${REGION}" \
