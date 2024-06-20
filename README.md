@@ -66,9 +66,11 @@ http://ip:8080
 
 - create a new pipeline job in jenkins
 
-![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/34cdf0d8-e7fe-442d-a889-2ef7911ccc67)
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/2e5148c9-7f47-4b86-abe9-8292c076f0bd)
 
-![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/ba04c7f3-81e3-47b4-b8d8-cba803e6194e)
+![image](https://github.com/vijay2181/aws_ami_using_jenkins_packer/assets/66196388/c507ef8e-124f-4fae-be9e-e8df8bada9fa)
+
+
 
 
 
