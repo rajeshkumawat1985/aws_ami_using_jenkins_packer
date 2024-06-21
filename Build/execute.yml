@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-   packer:
+   packer_service:
      user: "${USERID}:${GROUPID}"
      image: hashicorp/packer:full
      volumes:
