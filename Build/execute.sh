@@ -18,7 +18,7 @@ CONTAINER_NAME="vijay-$(echo "${JOB_NAME}" | tr '/ ' '._').${BRANCH_NAME}"
 CONTAINER_NAME="${CONTAINER_NAME}-${BUILD_ID}"
 
 # Run the Packer build
-docker-compose -f builder.yml run \
+docker-compose -f execute.yml run \
     --rm \
     -w "$WORKSPACE" \
     --name "${CONTAINER_NAME}" \
