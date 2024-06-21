@@ -22,7 +22,7 @@ docker-compose -f execute.yml run \
     --rm \
     -w "$WORKSPACE" \
     --name "${CONTAINER_NAME}" \
-    slave build \
+    packer build \
         -var "region=${REGION}" \
         -var "ami_name=${AMI_NAME}" \
         -var "description=${DESCRIPTION}" \
