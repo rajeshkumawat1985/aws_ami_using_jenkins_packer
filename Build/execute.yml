@@ -1,7 +1,6 @@
 version: '3.3'
 services:
    packer_service:
-     user: "${USERID}:${GROUPID}"
      image: hashicorp/packer:full
      volumes:
       - /etc/passwd:/etc/passwd:ro
